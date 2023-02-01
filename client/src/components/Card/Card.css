@@ -1,0 +1,127 @@
+.card {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 30px;
+    border: 0.5px solid grey;
+    cursor: pointer;
+}
+
+#loadingCardId {
+    cursor: wait;
+    background-color: rgb(233, 233, 233);
+    opacity: 0.6;
+}
+
+.skeleton {
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+
+.skeleton-text {
+    width: 90%;
+    height: 10px;
+    margin-top: 7px;
+    border-radius: 3px;
+}
+
+.skeleton-text:last-child {
+    width: 50%;
+    height: 10px;
+    margin-top: 7px;
+    border-radius: 3px;
+}
+
+.card__image--container {
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card__content {
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card__name {
+    width: 100%;
+    height: 22%;
+    padding-left: 5px;
+}
+
+.card__name--text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card__des {
+    width: 100%;
+    height: 40%;
+    padding-left: 5px;
+    padding-right: 2px;
+}
+
+.card__price {
+    width: 100%;
+    height: 16%;
+    padding-left: 5px;
+}
+
+.card__des--text {
+    font-size: 1.8rem;
+}
+
+.card__action {
+    width: 100%;
+    height: 22%;
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4px;
+}
+
+#card__cart__button {
+    font-size: 27px;
+    color: var(--grey);
+    margin-right: 10px;
+}
+
+#card__cart__button:hover {
+    color: var(--grey_dark);
+}
+
+#card__like__hollow {
+    font-size: 27px;
+    color: var(--grey);
+}
+
+#card__like__hollow-full {
+    font-size: 27px;
+    color: rgb(255, 87, 115);
+}
+
+#card__cart__button--full {
+    font-size: 27px;
+    margin-right: 10px; 
+    color: green;
+}

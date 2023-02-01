@@ -1,0 +1,33 @@
+.update_success {
+    width: 90%;
+    margin: auto;
+    background-color: rgba(19, 255, 19, 0.7);
+    border-radius: 3px;
+    opacity: 60%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.update_success_text {
+    font-size: 1.8rem;
+    color: rgb(0, 61, 0);
+}
+
+.update_error {
+    width: 90%;
+    margin: auto;
+    background-color: rgba(255, 19, 19, 0.7);
+    border-radius: 3px;
+    opacity: 60%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.update_error_text {
+    font-size: 1.8rem;
+    color: rgb(61, 0, 0);
+}
