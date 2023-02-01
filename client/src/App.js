@@ -55,8 +55,8 @@ function App() {
 
   return (
     <Router>
-      {loadingVal ? 
-        renderLoading():
+      {/* {loadingVal ? 
+        renderLoading(): */}
         <div className="App">
           <Navbar />
           <Routes>
@@ -71,7 +71,7 @@ function App() {
             <Route exact path='*' element={<Hero />} />      
           </Routes>
         </div>
-      }
+      {/* } */}
     </Router>
   );
 }
