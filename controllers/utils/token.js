@@ -10,18 +10,21 @@ export const createAccessToken = (user) => {
 
 // Function to verify access token
 export const verifyAccessToken = (token) => {
-    const options = { expiresIn: '1d' }
-    console.log("reached here")
-    let tokenFlag;
-    jwt.verify(token, process.env.ACCESSTOKENKEY, options, function(err, decoded) {
-        // check for error
-        if(err) {
-            tokenFlag = false   
-        }
-        tokenFlag = decoded;
-        console.log(tokenFlag)
-    });
-    return tokenFlag
+    if(token) {
+        const options = { expiresIn: '1d' }
+        let tokenFlag;
+        jwt.verify(token, process.env.ACCESSTOKENKEY, options, function(err, decoded) {
+            // check for error
+            if(err) {
+                tokenFlag = false   
+            }
+            tokenFlag = decoded;
+            console.log(tokenFlag)
+        });
+        return tokenFlag
+    } else {
+        return false
+    }
 }
 
 // Function to create refresh token
@@ -34,8 +37,13 @@ export const createRefreshToken = (user) => {
 
 // Function to verify refresh token
 export const verifyRefreshToken = (token) => {
-    const options = { expiresIn: '7d' }
+    if(token) {
 
-    const tokenFlag = jwt.verify(token, process.env.REFRESHTOKENKEY, options);
-    return tokenFlag;
+        const options = { expiresIn: '7d' }
+        
+        const tokenFlag = jwt.verify(token, process.env.REFRESHTOKENKEY, options);
+        return tokenFlag;
+    } else {
+        return false
+    }
 }
