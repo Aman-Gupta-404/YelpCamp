@@ -225,12 +225,6 @@ function Accounts() {
                         <p className="account__right--heading--text">Advanced Options</p>
                     </div>
 
-                    {/* <div className="account__right--horizontal" onClick={openAddProducts}>
-                        <p className="account__right--text">Add Products</p>
-                    </div>
-                    <Link to="/products/manage" className="account__right--horizontal">
-                        <p className="account__right--text">Manage Products</p>
-                    </Link> */}
                     <Link to="/cart" className="account__right--horizontal">
                         <p className="account__right--text">Cart</p>
                     </Link>
