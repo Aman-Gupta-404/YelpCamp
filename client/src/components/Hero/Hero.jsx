@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Hero.css"
+import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
@@ -12,7 +13,9 @@ function Hero() {
                 <h1 className='hero__content--text'>
                     We got your back!
                 </h1>
-                <button className="hero__content--action">Start Shopping</button>
+                <Link to='/shop'>
+                  <button className="hero__content--action">Start Shopping</button>
+                </Link>
             </div>
         </div>
     </div>
