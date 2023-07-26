@@ -13,9 +13,9 @@ function Hero() {
                 <h1 className='hero__content--text'>
                     We got your back!
                 </h1>
-                <Link to='/shop'>
-                  <button className="hero__content--action">Start Shopping</button>
-                </Link>
+{/*                 <Link to='/shop'> */}
+                  <Link to='/shop' className="hero__content--action">Start Shopping</Linl>
+{/*                 </Link> */}
             </div>
         </div>
     </div>
